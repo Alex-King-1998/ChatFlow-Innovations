@@ -1,24 +1,3 @@
-@media (max-width: 768px) {
-    .checkout-page {
-        width: 90%;
-        padding: 20px;
-    }
-
-    form input {
-        max-width: 100%;
-    }
-
-    .btn {
-        width: 100%;
-    }
-
-    body.index {
-        padding-top: 80px; /* Adjust based on the height of your navbar */
-    }
-}
-
-
-
 .btn {
     display: inline-block;
     background-color: #007BFF;
@@ -274,14 +253,39 @@ body.resources {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .navbar li {
-        display: block;
-        text-align: center;
+    .navbar {
+        position: static; /* Makes navbar behave normally, not fixed */
+    }
+
+    .navbar ul {
+        display: flex; /* Ensures navbar items are in a row on mobile */
+        justify-content: space-around; /* Evenly space out items */
         padding: 10px 0;
+    }
+
+    .navbar li {
+        padding: 10px; /* Reduces padding for mobile */
     }
 
     .resources .content {
         padding: 10px;
+    }
+
+    .checkout-page {
+        width: 90%;
+        padding: 20px;
+    }
+
+    form input {
+        max-width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    body.index {
+        padding-top: 60px; /* Adjust based on your navbar height */
     }
 }
 
@@ -312,4 +316,3 @@ textarea {
 .index, .contact, .resources {
     margin-left: 10px;
 }
-
