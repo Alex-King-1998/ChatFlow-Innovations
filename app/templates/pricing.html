@@ -7,6 +7,30 @@
     <link rel="stylesheet" href="..\..\app\static\css\style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Montserrat:wght@500&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-top: 20px;
+            background-color: #ff5722;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #e64a19;
+            transform: scale(1.05);
+        }
+
+        .pricing-section {
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body class="resources">
     <!-- Navbar section -->
@@ -17,38 +41,49 @@
             <li><a href="./contact.html">Contact</a></li>
         </ul>
     </nav>
-    <div>
+    <div class="pricing-section">
         <h1>Subscription Options</h1><br>
-        <h2>Basic Plan: <strong>$49.99/month</strong></h2>
-        <h3>Features:</h3>
-        <ul>
-            <li>1 chatbot</li>
-            <li>Limited customer interactions (e.g., up to 1,000 chats per month)</li>
-            <li>Basic integrations (website, email)</li>
-            <li>Standard analytics and reporting</li>
-            <li>Email support</li>
-        </ul>
-        <h2>Professional Plan: <strong>$149.99/month</strong></h2>
-        <h3>Features:</h3>
-        <ul>
-            <li>3 chatbots</li>
-            <li>Moderate customer interactions (e.g., up to 5,000 chats per month)</li>
-            <li>Enhanced integrations (CRM systems, e-commerce platforms)</li>
-            <li>Advanced analytics and insights</li>
-            <li>Email and live chat support</li>
-        </ul>
-        </h2>
-        <h2>Enterprise Plan: <strong>$299.99/month</strong></h2>
-        <h3>Features:</h3>
-        <ul>
-            <li>5 chatbots</li>
-            <li>High volume customer interactions (e.g., 10,000+ chats per month)</li>
-            <li>Full CRM and e-commerce integration</li>
-            <li>Real-time reporting and data analytics</li>
-            <li>Priority support (email and live chat)</li>
-            <li>Custom workflows and chatbot scripting</li>
-            <li>Multilingual support</li>
-        </ul>
+
+        <div class="plan">
+            <h2>Basic Plan: <strong>$49.99/month</strong></h2></h2><img src="app\static\images\basic-plan.jpg">
+            <h3>Features:</h3>
+            <ul>
+                <li>1 chatbot</li>
+                <li>Limited customer interactions (e.g., up to 1,000 chats per month)</li>
+                <li>Basic integrations (website, email)</li>
+                <li>Standard analytics and reporting</li>
+                <li>Email support</li>
+            </ul>
+            <a href="your-payment-link-here" class="btn">Buy Now</a>
+        </div>
+
+        <div class="plan">
+            <h2>Professional Plan: <strong>$149.99/month</strong><img src="app\static\images\professional-plan.jpg">
+            <h3>Features:</h3>
+            <ul>
+                <li>3 chatbots</li>
+                <li>Moderate customer interactions (e.g., up to 5,000 chats per month)</li>
+                <li>Enhanced integrations (CRM systems, e-commerce platforms)</li>
+                <li>Advanced analytics and insights</li>
+                <li>Email and live chat support</li>
+            </ul>
+            <a href="your-payment-link-here" class="btn">Buy Now</a>
+        </div>
+
+        <div class="plan">
+            <h2>Enterprise Plan: <strong>$299.99/month</strong></h2><img src="app\static\images\enterprise-plan.jpg">
+            <h3>Features:</h3>
+            <ul>
+                <li>5 chatbots</li>
+                <li>High volume customer interactions (e.g., 10,000+ chats per month)</li>
+                <li>Full CRM and e-commerce integration</li>
+                <li>Real-time reporting and data analytics</li>
+                <li>Priority support (email and live chat)</li>
+                <li>Custom workflows and chatbot scripting</li>
+                <li>Multilingual support</li>
+            </ul>
+            <a href="your-payment-link-here" class="btn">Buy Now</a>
+        </div>
     </div>
 </body>
 </html>
