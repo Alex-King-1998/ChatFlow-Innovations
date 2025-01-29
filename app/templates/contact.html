@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="..\..\app\static\css\style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Montserrat:wght@500&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body class="contact">
+    <!-- Navbar section -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href=".\pricing.html">Pricing</a></li>
+            <li><a href=".\contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact form section -->
+        <h1>Contact Us</h1>
+        <h2>Have a question, feedback, or need assistance? We’d love to hear from you! Whether you’re looking to learn more about our services, discuss a potential collaboration, or need support, our team is here to help. Simply reach out to us, and we’ll respond as quickly as possible.</h2>
+        <h2>Email</h2>
+            <p>chatflowinnovationscontact@gmail.com</p>
+        <h2>Phone</h2>
+            <p>0448030034</p>
+            <form id="contactForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone" required>
+        
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+        
+                <button type="submit">Send Message</button>
+            </form>
+        
+            <!-- Success/Error message -->
+            <p id="responseMessage"></p>
+        
+            <!-- EmailJS SDK -->
+            <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        
+            <script>
+                // Initialize EmailJS
+                emailjs.init("ANMmr_K37zHvCCNPc");  // Replace YOUR_USER_ID with your EmailJS user ID
+        
+                // Form submission event handler
+                document.getElementById("contactForm").addEventListener("submit", function(event) {
+                    event.preventDefault();  // Prevent default form submission
+        
+                    // Get form data
+                    const name = document.getElementById("name").value;
+                    const email = document.getElementById("email").value;
+                    const phone = document.getElementById("phone").value;
+                    const message = document.getElementById("message").value;
+        
+                    // Prepare email parameters
+                    const params = {
+                        name: name,
+                        email: email,
+                        phone: phone,
+                        message: message,
+                    };
+        
+                    // Send email using EmailJS
+                    emailjs.send("service_yyun8c2", "template_guob0go", params)
+                        .then(function(response) {
+                            document.getElementById("responseMessage").textContent = "Message sent successfully!";
+                            document.getElementById("contactForm").reset();  // Reset form after successful submission
+                        }, function(error) {
+                            document.getElementById("responseMessage").textContent = "Failed to send message. Please try again.";
+                        });
+                });
+            </script>
+</body>
+</html>

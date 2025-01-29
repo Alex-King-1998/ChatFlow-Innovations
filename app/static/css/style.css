@@ -1,0 +1,207 @@
+.button-container {
+    display: flex;
+    justify-content: center; /* Centers the button */
+    margin-top: 20px; /* Adds space above */
+}
+
+.Get-Yours {
+    display: inline-block; /* Keeps it from taking full width */
+    text-align: center; /* Centers text inside */
+    background-color: #007BFF; /* Primary CTA color */
+    color: white; /* Text color */
+    padding: 18px 50px; /* Slightly bigger button */
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none; /* Removes default underline */
+    transition: all 0.3s ease;
+}
+
+/* Centering within its container */
+.body-text {
+    text-align: center; /* Centers inline-block elements like the button */
+}
+
+.Get-Yours:hover {
+    background-color: #0056B3; /* Darker shade on hover */
+    color: white; /* Ensures text stays readable */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.Get-Yours:active {
+    transform: scale(0.98); /* Click effect */
+}
+
+
+
+
+.body-text {
+    text-align: left;
+}
+
+.body-text h2 {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+.body-text h3 {
+    font-size: 38px;
+}
+
+.body-text ul li {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.body-text p {
+    padding-bottom: 20px;
+}
+
+.body-text ul li img {
+    width: 40px;
+    height: 40px;
+    padding-right: 10px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+}
+
+h1, h2 {
+    margin: 20px 0;
+}
+
+.index h2 {
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #0077cc;
+}
+
+a:hover {
+    color: #005fa3;
+    text-decoration: underline;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #302f2f;
+    z-index: 1;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(228, 130, 3);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+/* Resources Page Specific Styles */
+body.resources {
+    background-color: #f4f4f9;
+    font-family: "Roboto";
+    margin-top: 60px; /* Prevent navbar overlap */
+}
+
+.resources .content {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.resources .content h1 {
+    text-align: center;
+}
+
+.resources .content h2 {
+    margin-top: 30px;
+}
+
+.resources a {
+    text-decoration: none;
+    font-family: "Roboto";
+}
+
+.resources #cv {
+    font-family: "Roboto";
+}
+
+/* Contact Form Styles */
+.contact h1 {
+    margin-top: 60px;
+    font-family: "Roboto";
+}
+
+.contact h2 {
+    font-family: "Roboto";
+}
+
+.contact p {
+    font-family: "Roboto";
+}
+
+.contact a {
+    font-family: "Roboto";
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar li {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .resources .content {
+        padding: 10px;
+    }
+}
+
+.message-field {
+    padding-top: 10px;
+}
+
+textarea {
+    height: 150px;
+    width: 300px;
+}
+
+#Alex-King {
+    height: 600px;
+    width: 1000px;
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(10px 10px 10px black);
+    display: block;
+    margin: 0 auto;
+}
+
+#Introduction {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.index, .contact, .resources {
+    margin-left: 10px;
+}
