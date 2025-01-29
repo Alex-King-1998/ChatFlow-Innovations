@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Enterprise Plan</title>
+    <link rel="stylesheet" href="..\..\app\static\css\style.css">
+</head>
+<body class="checkout-enterprise">
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="./pricing.html">Pricing</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="checkout-page">
+        <h1>Checkout - Enterprise Plan</h1>
+        <h2>Enterprise Plan: <strong>$299.99/month</strong></h2>
+        <img src="../../app/static/images/enterprise-plan.jpg" alt="Enterprise Plan Image">
+        <h3>Features:</h3>
+        <ul>
+            <li>5 chatbots</li>
+            <li>High volume customer interactions (e.g., 10,000+ chats per month)</li>
+            <li>Full CRM and e-commerce integration</li>
+            <li>Real-time reporting and data analytics</li>
+            <li>Priority support (email and live chat)</li>
+            <li>Custom workflows and chatbot scripting</li>
+            <li>Multilingual support</li>
+        </ul>
+        
+        <h3>Payment Information</h3>
+        <form action="your-payment-processing-url" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="card">Credit Card</label>
+            <input type="text" id="card" name="card" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit" class="btn">Complete Purchase</button>
+        </form>
+    </div>
+</body>
+</html>

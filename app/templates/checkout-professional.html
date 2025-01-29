@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Professional Plan</title>
+    <link rel="stylesheet" href="..\..\app\static\css\style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="./pricing.html">Pricing</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="checkout-page">
+        <h1>Checkout - Professional Plan</h1>
+        <h2>Professional Plan: <strong>$149.99/month</strong></h2>
+        <img src="../../app/static/images/professional-plan.jpg" alt="Professional Plan Image">
+        <h3>Features:</h3>
+        <ul>
+            <li>3 chatbots</li>
+            <li>Moderate customer interactions (e.g., up to 5,000 chats per month)</li>
+            <li>Enhanced integrations (CRM systems, e-commerce platforms)</li>
+            <li>Advanced analytics and insights</li>
+            <li>Email and live chat support</li>
+        </ul>
+        
+        <h3>Payment Information</h3>
+        <form action="your-payment-processing-url" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="card">Credit Card</label>
+            <input type="text" id="card" name="card" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit" class="btn">Complete Purchase</button>
+        </form>
+    </div>
+</body>
+</html>
