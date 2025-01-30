@@ -21,9 +21,9 @@
     <!-- Contact form section -->
     <h1>Contact Us</h1>
     <h2>Have a question, feedback, or need assistance? We’d love to hear from you! Whether you’re looking to learn more about our services, discuss a potential collaboration, or need support, our team is here to help. Simply reach out to us, and we’ll respond as quickly as possible.</h2>
-
+    
     <!-- Formspree Contact Form -->
-    <form id="contactForm" action="https://formspree.io/f/xnnjvazk" method="POST">
+    <form id="contactForm">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
 
@@ -43,33 +43,28 @@
     <p id="responseMessage"></p>
 
     <script>
-        // Handle form submission using Fetch API
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault();  // Prevent the form from redirecting
-
-            const form = event.target;
-            const formData = new FormData(form);
-
-            // Set up the request
-            fetch(form.action, {
-                method: form.method,
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from submitting the usual way
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            
+            // Send form data via fetch to Formspree
+            fetch('https://formspree.io/f/xnnjvazk', {
+                method: 'POST',
                 body: formData,
             })
-            .then(response => response.json())  // Formspree will return JSON
-            .then(data => {
-                if (data.ok) {
-                    // Success: Display success message
-                    document.getElementById('responseMessage').textContent = 'Message sent successfully!';
-                    form.reset();  // Reset the form fields
+            .then(response => {
+                if (response.ok) {
+                    document.getElementById("responseMessage").textContent = "Message sent successfully!";
+                    event.target.reset(); // Reset the form after successful submission
                 } else {
-                    // Error: Display error message
-                    document.getElementById('responseMessage').textContent = 'Failed to send message. Please try again.';
+                    document.getElementById("responseMessage").textContent = "Failed to send message. Please try again.";
                 }
             })
             .catch(error => {
-                // Error: Display error message
-                console.log('Error:', error);
-                document.getElementById('responseMessage').textContent = 'Failed to send message. Please try again.';
+                console.error("Error:", error);
+                document.getElementById("responseMessage").textContent = "An error occurred. Please try again.";
             });
         });
     </script>
