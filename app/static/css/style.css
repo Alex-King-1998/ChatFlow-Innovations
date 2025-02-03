@@ -217,6 +217,7 @@ body.resources {
     padding: 20px;
     max-width: 800px;
     margin: auto;
+    text-align: center;
 }
 
 .resources .content h1 {
@@ -270,6 +271,10 @@ body.resources {
         padding: 10px; /* Reduces padding for mobile */
     }
 
+    .resources #pricing-section {
+        text-align: center;
+    }
+
     .resources .content {
         padding: 10px;
     }
@@ -318,4 +323,29 @@ textarea {
 
 .index, .contact, .resources {
     margin-left: 10px;
+}
+
+.credits h1 {
+    text-align: center;
+}
+
+.credits p {
+    font-size: 20px;
+}
+
+.credits h2 {
+    padding-top: 20px;
+}
+
+.icons-sourced {
+    padding-top: 20px;
+}
+
+.pricing-section {
+    text-align: center;
+}
+
+.pricing-section ul {
+    font-size: 18px;
+    list-style-position: inside;
 }
