@@ -238,13 +238,27 @@ body.resources {
 }
 
 /* Contact Form Styles */
+
+.contact {
+    background-color: #f4f4f9;;
+}
+
+.contact img {
+    max-height: 300px;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
 .contact h1 {
     margin-top: 60px;
     font-family: "Roboto";
+    text-align: center;
 }
 
 .contact h2 {
     font-family: "Roboto";
+    text-align: center;
 }
 
 .contact p {
@@ -348,4 +362,10 @@ textarea {
 .pricing-section ul {
     font-size: 18px;
     list-style-position: inside;
+}
+
+#voiceflow-chat {
+    max-width: 400px; /* Adjust as needed */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
