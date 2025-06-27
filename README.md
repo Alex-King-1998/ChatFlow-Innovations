@@ -54,9 +54,17 @@ This project includes a fully working Stripe payment portal:
 
 ## ✨ Screenshots
 
-![ChatFlow Homepage](screenshots/readme1.png)
-![AI Support Chatbot](screenshots/readme2.png)
-![Full Stripe Integration](screenshots/readme3.png)
+<p align="center">
+  <img src="screenshots/readme1.png" alt="ChatFlow Homepage">
+</p>
+
+<p align="center">
+  <img src="screenshots/readme2.png" alt="AI Support Chatbot">
+</p>
+
+<p align="center">
+  <img src="screenshots/readme3.png" alt="Full Stripe Integration">
+</p>
 
 ## 📹 Demo Video
 
