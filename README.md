@@ -4,59 +4,61 @@ This is the marketing website for ChatFlow Innovations, a B2B chatbot solution b
 ✅ A demo video showcasing core features
 ✅ A fully-integrated Stripe payment portal
 
-⚠️ Note: Not currently deployed to Google Cloud. Please download the .zip file, extract, and open in your IDE or local server to view.
+⚠️ **Note:** Not currently deployed to Google Cloud. Please download the `.zip` file, extract, and open in your IDE or local server to view.
 
-🚀 Features
-Modern, responsive marketing landing page
+---
 
-Embedded support chatbot powered by Voiceflow
+## 🚀 Features
+- Modern, responsive marketing landing page
+- Embedded support chatbot powered by Voiceflow
+- Secure Stripe checkout flow for purchasing subscriptions
+- Demo video walkthrough of the chatbot product
+- Contact form and business details
 
-Secure Stripe checkout flow for purchasing subscriptions
+---
 
-Demo video walkthrough of the chatbot product
+## 🛠 Tech Stack
+- HTML5 / CSS3 / JavaScript
+- Stripe Checkout API
+- Voiceflow chatbot integration
 
-Contact form and business details
+---
 
-🛠 Tech Stack
-HTML5 / CSS3 / JavaScript
+## 🧩 Installation
 
-Stripe Checkout API
-
-Voiceflow chatbot integration
-
-
-🧩 Installation
-1️⃣ Download the repository:
-
-bash
-Copy
-Edit
+1️⃣ **Download the repository:**
+```bash
 git clone https://github.com/Alex-King-1998/chatflow-innovations.git
+```
 or download the .zip and extract it.
 
-2️⃣ Open the project:
+**2️⃣ Open the project:**
 
-Using your IDE (e.g., VS Code)
-
-Or open index.html in your browser
+- Using your IDE (e.g., VS Code)
+- Or open `index.html` in your browser
 
 ✅ Note: Some features (like Stripe) may require server-side handling in production environments.
 
-💳 Stripe Payment Integration
+---
+
+## 💳 Stripe Payment Integration
 This project includes a fully working Stripe payment portal:
 
-Test keys and environment used for development
-
-Example credit card numbers for sandbox testing
-
-Checkout flow demonstration
+- Test keys and environment used for development
+- Example credit card numbers for sandbox testing
+- Checkout flow demonstration
 
 👉 Important: Replace test keys with your live keys before deploying.
 
-✨ Screenshots
+---
+
+## ✨ Screenshots
+
 ![ChatFlow Homepage](screenshots/readme1.png)
 ![AI Support Chatbot](screenshots/readme2.png)
 ![Full Stripe Integration](screenshots/readme3.png)
 
-📹 Demo Video
-https://www.youtube.com/watch?v=LziDWWPdJ38
+## 📹 Demo Video
+
+[▶️ Watch the demo video on YouTube](https://www.youtube.com/watch?v=LziDWWPdJ38)
+
