@@ -31,7 +31,7 @@ Voiceflow chatbot integration
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/chatflow-innovations.git
+git clone https://github.com/Alex-King-1998/chatflow-innovations.git
 or download the .zip and extract it.
 
 2️⃣ Open the project:
@@ -54,6 +54,9 @@ Checkout flow demonstration
 👉 Important: Replace test keys with your live keys before deploying.
 
 ✨ Screenshots
-
+![ChatFlow Homepage](screenshots/readme1.png)
+![AI Support Chatbot](screenshots/readme2.png)
+![Full Stripe Integration](screenshots/readme3.png)
 
 📹 Demo Video
+https://www.youtube.com/watch?v=LziDWWPdJ38
